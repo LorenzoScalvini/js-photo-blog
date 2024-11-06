@@ -11,9 +11,9 @@ axios.get('https://jsonplaceholder.typicode.com/photos')
 
     card.innerHTML = `
           <div class="card">
-              <img src="${photo.url}" class="card-img-top" alt="">
+              <img src="${photo.url}" class="card-img-top img-size" alt="">
               <div class="card-body bg-light">
-                  <p class="card-text text-dark">${photo.title} <a href=""></a></p>
+                  <p class="card-text text-dark card-title">${photo.title} <a href=""></a></p>
               </div>
           </div>
       `;

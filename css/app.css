@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chokokutai&family=Signika:wght@300..700&display=swap");
+
 body {
-    background-image: url('../img/cork.png');
+  background-image: url("../img/cork.png");
 }
 
 .title-img {
-    background-image: url('../img/wall.png');
-    height: 100px;
+  background-image: url("../img/wall.png");
+  height: 100px;
+}
+
+.img-size {
+  padding: 2rem;
+}
+
+.card-title {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
 }
