@@ -1,0 +1,8 @@
+body {
+    background-image: url('../img/cork.png');
+}
+
+.title-img {
+    background-image: url('../img/wall.png');
+    height: 100px;
+}
