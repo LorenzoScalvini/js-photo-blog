@@ -1,21 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Chokokutai&family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Signika:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-image: url("../img/cork.png");
 }
 
-.title-img {
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("../img/wall.png");
-  height: 100px;
+  height: 10rem;
 }
 
-.img-size {
-  padding: 2rem;
+nav > .title-nav {
+  font-size: 60px;
+  font-family: "Signika", sans-serif;
 }
 
-.card-title {
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5rem;
+p {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1 1 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.column:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.column:hover .pin-card {
+  display: none;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.pin-card {
+  width: 2.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    flex: 1 1 100%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+#modal-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#modal-title {
+  margin-top: 20px;
+  font-size: 18px;
 }
