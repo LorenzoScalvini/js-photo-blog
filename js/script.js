@@ -29,7 +29,7 @@ axios
 
       modal.innerHTML = `
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal(${photo.id})"></span>
+            <span onclick="closeModal(${photo.id})"></span>
             <img src="${photo.url}" id="modal-image" alt="">
             <p id="modal-title">${photo.title}</p>
         </div>

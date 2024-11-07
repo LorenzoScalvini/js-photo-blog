@@ -60,6 +60,7 @@ p {
 .column:hover {
   transform: scale(1.1) rotate(10deg);
   z-index: +1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .column:hover .pin-card {
@@ -70,6 +71,7 @@ p {
   border-radius: 10px;
   overflow: visible;
   position: relative;
+  cursor: pointer;
 }
 
 .card-wrapper {
@@ -124,6 +126,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .modal-content {
@@ -134,16 +137,10 @@ p {
   max-width: 600px;
   max-height: 80%;
   overflow: auto;
+  cursor: auto;
 }
 
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
-}
+
 
 #modal-image {
   width: 100%;
