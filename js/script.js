@@ -13,6 +13,7 @@ axios
 
       card.innerHTML = `
           <div class="card"${photo.id}>
+          <img src="./img/pin.svg" class="pin-card" alt="">
               <img src="${photo.url}" class="card-img-top img-size" alt="">
               <div>
                   <p class="card-text">${photo.title}</p>
