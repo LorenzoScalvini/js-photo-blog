@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Signika:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Signika:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -60,7 +60,8 @@ p {
 .column:hover {
   transform: scale(1.1) rotate(10deg);
   z-index: +1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .column:hover .pin-card {
@@ -140,8 +141,6 @@ p {
   cursor: auto;
 }
 
-
-
 #modal-image {
   width: 100%;
   max-width: 100%;
@@ -151,4 +150,21 @@ p {
 #modal-title {
   margin-top: 20px;
   font-size: 18px;
+}
+
+.close-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #b3b3b3;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #a0a0a0;
 }
